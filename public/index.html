@@ -1,98 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Conversor de Moedas</title>
-        <meta name="description" content="Conversor de moedas online para cotação do Real Brasileiro em relação ao Dólar Americano, Dólar Canadense e Euro. Atualize-se com as taxas de câmbio em tempo real.">
-        <meta name="keywords" content="cotação, real brasileiro, conversor de moedas, câmbio, dólar, euro, conversão de moedas">
-        <meta name="author" content="Seu Nome ou Nome da Empresa">
-        <link rel="canonical" href="https://www.seusite.com/cotacao-moedas">
-        <meta property="og:title" content="Cotação do Real Brasileiro - Conversor de Moedas">
-        <meta property="og:description" content="Conversor de moedas online para cotação do Real Brasileiro em relação ao Dólar Americano, Dólar Canadense e Euro.">
-        <meta property="og:url" content="https://www.seusite.com/cotacao-moedas">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="https://www.seusite.com/imagem-compartilhamento.jpg">
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-        <header>
-            <h1>Cotação do Real Brasileiro</h1>
-        </header>
-    
-        <main>
-            <div class="container">
-                <!-- Container da cotação -->
-                <label for="currency-select">Escolha a moeda:</label>
-                <select id="currency-select">
-                    <option value="USD">Dólar Americano (USD)</option>
-                    <option value="CAD">Dólar Canadense (CAD)</option>
-                    <option value="EUR">Euro (EUR)</option>
-                </select>
-                
-                <label for="amount-input">Valor em reais:</label>
-                <input type="number" id="amount-input" value="1">
-                
-                <button id="convert-button">Converter</button>
-    
-                <div id="rate">
-                    <p>Valor: <span id="rate-value"></span></p>
-                    <p>Conversão: <span id="converted-value"></span></p>
-                </div>
-            </div>
-    
-            <!-- Conteúdo adicional -->
-            <div class="content">
-                <section id="about-currency-exchange">
-                    <h2>Entenda a Cotação de Moedas</h2>
-                    <p>A cotação de moedas é um elemento crucial na economia global, refletindo o valor relativo entre diferentes moedas. Para o Brasil, acompanhar as cotações do Real em relação a moedas como o Dólar Americano, o Euro e o Dólar Canadense é fundamental para diversos setores econômicos.</p>
-                </section>
-    
-                <section id="factors-affecting-exchange-rates">
-                    <h2>Fatores que Influenciam as Taxas de Câmbio</h2>
-                    <ul>
-                        <li><strong>Política Monetária:</strong> Decisões dos bancos centrais sobre taxas de juros e liquidez afetam diretamente o valor das moedas.</li>
-                        <li><strong>Indicadores Econômicos:</strong> PIB, inflação e dados de emprego podem causar flutuações nas taxas de câmbio.</li>
-                        <li><strong>Estabilidade Política:</strong> Eventos políticos significativos podem impactar a confiança na moeda de um país.</li>
-                        <li><strong>Comércio Internacional:</strong> Balanças comerciais favoráveis tendem a fortalecer a moeda local.</li>
-                    </ul>
-                </section>
-    
-                <section id="importance-for-brazilians">
-                    <h2>Importância da Cotação para os Brasileiros</h2>
-                    <p>Acompanhar a cotação do Real é essencial para:</p>
-                    <ul>
-                        <li>Planejamento de viagens internacionais</li>
-                        <li>Importação e exportação de produtos</li>
-                        <li>Investimentos em moeda estrangeira</li>
-                        <li>Remessas internacionais</li>
-                    </ul>
-                </section>
-    
-                <section id="tips-for-currency-exchange">
-                    <h2>Dicas para Troca de Moedas</h2>
-                    <ol>
-                        <li>Compare as taxas oferecidas por diferentes instituições financeiras.</li>
-                        <li>Fique atento às flutuações do mercado e tente trocar em momentos favoráveis.</li>
-                        <li>Considere utilizar cartões de viagem pré-pagos para evitar carregar grandes quantias em espécie.</li>
-                        <li>Mantenha-se informado sobre eventos econômicos globais que possam afetar as taxas de câmbio.</li>
-                    </ol>
-                </section>
-    
-                <section id="currency-updates">
-                    <h2>Atualizações de Cotação</h2>
-                    <p>Nossa ferramenta de conversão é atualizada regularmente para fornecer as cotações mais precisas. Recomendamos verificar as taxas frequentemente, especialmente antes de tomar decisões financeiras importantes.</p>
-                </section>
-            </div>
-        </main>
-    
-        <footer>
-            <p>&copy; 2024 Seu Nome ou Nome da Empresa. Todos os direitos reservados.</p>
-        </footer>
-    
-        <script src="script.js"></script>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Veja a cotação do dólar americano, dólar canadense e euro em relação ao real brasileiro em tempo real.">
+    <meta name="keywords" content="cotação, dólar, euro, real brasileiro, tempo real, moedas, conversão">
+    <meta name="author" content="Seu Nome">
+    <title>Cotação do Real Brasileiro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cotação do Real Brasileiro</h1>
+        <div class="conversion-form">
+            <label for="currency-select">Escolha a moeda:</label>
+            <select id="currency-select">
+                <option value="USD">Dólar Americano (USD)</option>
+                <option value="CAD">Dólar Canadense (CAD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="BRL">Real Brasileiro (BRL)</option>
+            </select>
+            <label for="amount-input">Valor em reais:</label>
+            <input type="number" id="amount-input">
+            <button id="convert-button">Converter</button>
+        </div>
+        <div class="result">
+            <p id="rate-value"></p>
+            <ul id="converted-values"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
-
