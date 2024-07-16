@@ -23,7 +23,7 @@ body {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #007bff;
     max-width: 400px;
     width: 100%;
 }
@@ -84,4 +84,17 @@ ul {
 li {
     font-size: 18px;
     margin-top: 10px;
+}
+
+#converted-values{
+   align-items: center;
+   justify-items: center;
+   justify-content: center;
+    text-align: center;
+   
+    width: 100%;
+    max-width:100%;
+    font-size: 13px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
 }
