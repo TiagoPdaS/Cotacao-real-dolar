@@ -44,9 +44,9 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         if (selectedCurrency === 'BRL') {
-            rateValue.textContent = `Valor em Real Brasileiro (BRL): ${amount.toFixed(2)}`;
+            rateValue.textContent = `${amount.toFixed(2)}`;
         } else {
-            rateValue.textContent = `Valor em ${selectedCurrency}: ${(amount / rates[selectedCurrency]).toFixed(2)}`;
+            rateValue.textContent = `${([selectedCurrency]).toFixed(2)}`;
         }
     }
 
